@@ -17,5 +17,8 @@ jobs:
       - name: List project files
         run: ls -la
 
+      - name: Build Docker image
+        run: docker build -t myweb .
+
       - name: Echo test
         run: echo "CI pipeline is working!"
